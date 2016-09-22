@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Objetivos de Desarrollo Sostenible</title>
+	<link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,300,600italic,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/home.css">
+	<!-- Load c3.css -->
+	<link href="lib/c3.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src='image.js'></script>
+    <script type="text/javascript" src="http://gabelerner.github.io/canvg/rgbcolor.js"></script>
+    <script type="text/javascript" src="http://gabelerner.github.io/canvg/StackBlur.js"></script>
+    <script type="text/javascript" src="http://gabelerner.github.io/canvg/canvg.js"></script>
+  </head>
+  <body>
+    <div class="full">
+      <div class="header">
+        <div class="imagen">
+          <div class="fondo">
+          <!-- <nav class="trans sin_sombra">
+            <div class="nav-wrapper">
+              <ul id="nav-mobile2" class="right hide-on-med-and-down">
+                <li><a id="esp" class="t_sm" href="#!">ESP</a></li>
+                <span class="claro left">/</span>
+                <li><a id="ing" class="t_sm" href="#!">ENG</a></li>
+              </ul>
+            </div>
+          </nav> -->
+          <div class="head_cont valign-wrapper">
+            <div class="row center-align valign" >
+              <div class="col s4 offset-s4">
+                <img class="logo" src="img/ods_logo_home.png" alt=""/>
+              </div>
+              <div class="col s12">
+                <a class="waves-effect waves-light btn color white-text sin_sombra marg t_sm modal-trigger" href="#modal1">Video</a>
+              </div>
+              <div class="col s12">
+                <a class="waves-effect waves-light btn color white-text sin_sombra marg t_sm" href="acerca.html">ACERCA DE</a>
+              </div>
+              <div class="col s6 right-align pad_r">
+                <a href="https://www.gob.mx" target="_blank"><img class="logo1" src="img/logoPR.png" alt="" /></a>
+              </div>
+              <div class="col s6 left-align pad_l">
+                <a href="http://www.inegi.org.mx" target="_blank"><img class="logo2" src="img/logoINEGI.png" alt="" /></a>
+              </div>
+              <div class="col s12">
+                <p class="white-text t_normal">PRÓXIMAMENTE</p>
+              </div>
+                <div id="modal1" class="modal">
+				    <div class="modal-content">
+				      <div class="video-container">
+				        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5XlElXbhTrk?rel=0" frameborder="0" allowfullscreen></iframe>
+				      </div>
+				    </div>
+				</div>
+            </div>
+          </div>
+          </div>
+        </div>
+<!--
+        <nav id="nav_s" class="sticky">
+          <div class="nav-wrapper">
+            <ul id="nav-mobile" class="hide-on-med-and-down nab">
+              <li class="tam"><a href="objetivos.html">OBJETIVOS</a></li>
+              <li class="tam"><a href="#!">EXPLORA</a></li>
+              <li class="tam"><a href="#!">COMPARA</a></li>
+              <li class="tam"><a href="#!">¿C&Oacute;MO VAMOS?</a></li>
+            </ul>
+          </div>
+        </nav>
+-->
+<!--
+        <nav id="normal">
+          <div class="nav-wrapper">
+            <a href="home.html" id="imago" class="brand-logo"><img src="img/logo.png" alt="" style="width:1%; margin-top: 18%; margin-left: 50%;"/></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down nav_stick nab">
+              <li class="tam t_sm"><a href="objetivos.html">OBJETIVOS</a></li>
+              <li class="tam t_sm"><a href="#!">EXPLORA</a></li>
+              <li class="tam t_sm"><a href="#!">COMPARA</a></li>
+              <li class="tam t_sm"><a href="#!">¿C&Oacute;MO VAMOS?</a></li>
+            </ul>
+          </div>
+        </nav> -->
+      </div>
+    <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <script type="text/javascript" src="entidad.json"></script>
+    <script type="text/javascript" src="entidad2.json"></script>
+    <script type="text/javascript" src="municipio.json"></script>
+    <script type="text/javascript" src="nacion.json"></script>
+
+    <!-- Load d3.js and c3.js -->
+  <script src="lib/d3.v3.min.js" charset="utf-8"></script>
+  <script src="lib/c3.min.js"></script>
+  <script src="classybrew/build/classybrew.min.js"></script>
+
+  <script type="text/javascript">
+       $(document).ready(function(){
+		    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+		    $('.modal-trigger').leanModal();
+		  });
+    </script>
+  </body>
+</html>
